@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Editor</title>
-  <style type="text/css" media="screen">
-    body {
-        overflow: hidden;
-    }
-    #editor {
-        margin: 0;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-  </style>
-    <script src="gulpfile.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Editor</title>
+    <link href="/static/css/main.css" media="screen" rel="stylesheet"/>
 </head>
 <body>
 
 <div class="container">
-    <pre id="editor">function foo(items) {
-        var i;
-        for (i = 0; i &lt; items.length; i++) {
-            alert("Ace Rocks " + items[i]);
+    <div class="box box__assets">
+        <h2>Task</h2>
+        <p>Create a simple JS function which is going to alert a message.</p>
+
+        <h2>Assets</h2>
+        <ul>
+            <li><a href="#">lesson_1.md</a></li>
+            <li><a href="#">lesson_1_video.mpg</a></li>
+            <li><a href="#">lesson_1_browser.html</a></li>
+            <li><a href="#">lesson_1_cli.md</a></li>
+        </ul>
+    </div>
+    <div class="box box__code">
+        <pre id="editor">
+        function foo(items) {
+            var i;
+            for (i = 0; i < items.length; i++) {
+                alert("Ace Rocks " + items[i]);
+            }
         }
-    }</pre>
+        </pre>
+        <a href="#" class="button">Submit code</a>
+    </div>
+    <div class="box box__result">
+
+    </div>
 </div>
 
 <script src="ace/src-min/ace.js" type="text/javascript" charset="utf-8"></script>
@@ -36,6 +43,7 @@
     editor.setTheme("ace/theme/twilight");
     editor.session.setMode("ace/mode/javascript");
 </script>
+<script src="/static/js/main.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 </html>

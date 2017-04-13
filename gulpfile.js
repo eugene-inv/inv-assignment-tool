@@ -2,6 +2,7 @@
 
 var autoprefixer = require("gulp-autoprefixer");
 var browserify = require("browserify");
+var buffer = require("vinyl-buffer");
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sass = require("gulp-sass");
@@ -12,15 +13,11 @@ var watch = require("gulp-watch");
 var paths = {
     src: {
         js: "src/js/**/*",
-        scss: "src/scss/main.scss"
+        scss: "src/scss/main.scss",
     },
     dst: {
-        css: [
-            "static/css"
-        ],
-        js: [
-            "static/js"
-        ],
+        css: "static/css",
+        js: "static/js",
     },
     watch: {
         scss: "src/scss/**/*.scss",
@@ -57,14 +54,11 @@ gulp.task("js", function() {
             this.emit("end");
         })
         .pipe(source("main.js"))
-        .pipe(buffer())
-        .pipe(sourcemaps.init({ loadMaps: true }))
-        .pipe(sourcemaps.write("./"))
         .pipe(gulp.dest(paths.dst.js));
 });
 
 gulp.task("watch-js", [ "build" ], function() {
-    return gulp.watch(paths.watch.js, ["js", "admin-js"]);
+    return gulp.watch(paths.watch.js, ["js"]);
 });
 
 
