@@ -1,0 +1,22 @@
+.assignment-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main summary"
+    "footer footer";
+  grid-gap: 2rem;
+  padding: 1.5rem 3rem;
+
+  &__summary {
+    grid-area: header;
+  }
+
+  &__feedback {
+    grid-area: summary;
+  }
+
+  &__assignments {
+    grid-area: main;
+  }
+}
