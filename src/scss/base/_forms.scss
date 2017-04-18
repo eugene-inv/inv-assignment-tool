@@ -1,0 +1,16 @@
+/* Basic form control styles */
+
+input,
+textarea {
+  padding: 0.5rem;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #aaa;
+}
+
+button {
+  @include button;
+}

@@ -1,8 +1,12 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background: #333;
+    box-sizing: border-box;
 }
 
 #editor {

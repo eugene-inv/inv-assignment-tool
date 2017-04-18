@@ -1,0 +1,26 @@
+.assignment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 1.5rem 3rem;
+
+  &__summary {
+    grid-column: span 2;
+    padding: 1.5rem 0;
+  }
+  &__input {
+    position: relative;
+    min-height: 250px;
+    padding: 1.5rem 3rem;
+    border: 2px solid #ccc;
+  }
+  &__output {
+    padding: 1.5rem 3rem;
+    border: 2px solid #ccc;
+  }
+  &__feedback {
+    grid-column: span 2;
+    padding: 1.5rem 3rem;
+    background-color: #ccffcc;
+  }
+}
