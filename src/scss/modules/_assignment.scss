@@ -13,14 +13,17 @@
     min-height: 250px;
     padding: 1.5rem 3rem;
     border: 2px solid #ccc;
+    border-radius: 10px;
   }
   &__output {
     padding: 1.5rem 3rem;
     border: 2px solid #ccc;
+    border-radius: 10px;
   }
   &__feedback {
     grid-column: span 2;
-    padding: 1.5rem 3rem;
     background-color: #ccffcc;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
   }
 }
