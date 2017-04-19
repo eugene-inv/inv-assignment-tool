@@ -1,5 +1,11 @@
 /* Basic form control styles */
 
+form {
+  * + & {
+    margin-top: 1.5rem;
+  }
+}
+
 input,
 textarea {
   padding: 0.5rem;
