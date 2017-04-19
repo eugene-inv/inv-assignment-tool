@@ -16,7 +16,3 @@
         </div>
     </div>
 </template>
-
-<style>
-    @import 'scss/main.scss';
-</style>

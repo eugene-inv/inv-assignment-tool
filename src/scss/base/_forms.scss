@@ -1,6 +1,25 @@
 /* Basic form control styles */
 
+form {
+  * + & {
+    margin-top: 1.5rem;
+  }
+}
+
 input,
+textarea,
+select,
+option {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  color: $c-text-body;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
 textarea {
   padding: 0.5rem;
 }
@@ -8,7 +27,7 @@ textarea {
 textarea {
   display: block;
   width: 100%;
-  border: 1px solid #aaa;
+  border: 1px solid $c-input-border;
 }
 
 button {
