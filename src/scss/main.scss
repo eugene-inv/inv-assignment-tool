@@ -1,8 +1,16 @@
-@import 'mixins/button';
+/* libraries */
+@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../../node_modules/font-awesome/css/font-awesome.css';
 
-@import 'base/type';
-@import 'base/forms';
+/* mixins */
+@import './../scss/mixins/_button.scss';
 
-@import 'modules/assignment';
-@import 'modules/assignment-list';
-@import 'modules/home';
+/* global */
+
+@import './../scss/base/_type.scss';
+@import './../scss/base/_forms.scss';
+
+/* modules */
+@import './../scss/modules/_global.scss';
+@import './../scss/modules/_assignment.scss';
+@import './../scss/modules/_assignment-list.scss';
