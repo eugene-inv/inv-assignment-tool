@@ -9,21 +9,21 @@ Vue.use(Router)
 const router = new Router()
 
 router.map({
-    '/posts': {
-        component: AssignmentList
-    },
+  '/posts': {
+    component: AssignmentList
+  },
 
-    '/post/:id': {
-        component: AssignmentView
-    }
+  '/post/:id': {
+    component: AssignmentView
+  }
 })
 
 router.beforeEach(function () {
-    window.scrollTo(0, 0)
+  window.scrollTo(0, 0)
 })
 
 router.redirect({
-    '*': '/posts'
+  '*': '/posts'
 })
 
 router.start(App, '#app')
