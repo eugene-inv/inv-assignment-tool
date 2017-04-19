@@ -12,17 +12,17 @@
     position: relative;
     min-height: 250px;
     padding: 1.5rem 3rem;
-    border: 2px solid #ccc;
+    border: 2px solid $c-section-border;
     border-radius: 10px;
   }
   &__output {
     padding: 1.5rem 3rem;
-    border: 2px solid #ccc;
+    border: 2px solid $c-section-border;
     border-radius: 10px;
   }
   &__feedback {
     grid-column: span 2;
-    background-color: #ccffcc;
+    background-color: $c-alert-success;
     padding: 1.5rem 3rem;
     border-radius: 10px;
   }
