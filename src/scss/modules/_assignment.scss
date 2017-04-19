@@ -20,6 +20,9 @@
     border: 2px solid $c-section-border;
     border-radius: 10px;
   }
+  &__output-container {
+    padding: 1.5rem 0;
+  }
   &__feedback {
     grid-column: span 2;
     background-color: $c-alert-success;
