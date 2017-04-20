@@ -4,6 +4,11 @@ node_modules
 static/*
 .idea/
 _replicator/
+_replicator
 _users/
+_users
 pouch__all_dbs__/
+pouch__all_dbs__
 vuedb/
+vuedb
+log.txt
