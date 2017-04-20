@@ -4,6 +4,9 @@
             <div class="container">
                 <div class="navbar-header">
                     <a class="logo" :href="'#/'"><img src="./assets/logo-inviqa.png"></a>
+                    <span>Blended Learning Tool</span>
+
+                    <a href="/#!/create" class="create">Create assignment <span class="glyphicon glyphicon-pencil"></span></a>
                 </div>
             </div>
         </nav>

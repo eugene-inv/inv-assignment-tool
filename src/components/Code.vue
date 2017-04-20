@@ -2,7 +2,7 @@
     <div class="col-md-4">
         <div class="panel panel-default">
             <div class="panel-body">
-                <p>{{ comment.content }}</p>
+                <p>{{ code.content }}</p>
             </div>
         </div>
     </div>
@@ -10,10 +10,10 @@
 
 <script>
 export default {
-    name: 'Comment',
+    name: 'Code',
 
     props: {
-        comment: Object
+        code: Object
     }
 }
 </script>

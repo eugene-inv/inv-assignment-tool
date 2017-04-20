@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import App from './App'
 import AssignmentList from './components/AssignmentList'
 import AssignmentView from './components/AssignmentView'
+import CreateAssignment from './components/CreateAssignment'
 
 Vue.use(Router)
 
@@ -15,6 +16,10 @@ router.map({
 
   '/post/:id': {
     component: AssignmentView
+  },
+
+  '/create': {
+    component: CreateAssignment
   }
 })
 
