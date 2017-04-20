@@ -38,6 +38,7 @@
     "file-loader": "^0.8.4",
     "font-awesome-webpack": "0.0.4",
     "function-bind": "^1.0.2",
+    "html-loader": "^0.4.4",
     "html-webpack-plugin": "^1.7.0",
     "imports-loader": "^0.6.5",
     "inject-loader": "^2.0.1",
