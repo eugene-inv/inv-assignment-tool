@@ -1,59 +1,61 @@
 <template>
-    <div class="row">
-        <div class="col-md-12">
-            <h2 class="page-header">Asignments</h2>
-        </div>
-        <post
-            v-for="post in posts"
-            :post="post">
-        </post>
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <input type="text" class="form-control" v-model="title" placeholder="Enter title">
-                    <textarea class="form-control" v-model="content" placeholder="Enter content">
-                    </textarea>
-                    <button class="btn btn-default" v-on:click="submit">Submit</button>
+    <div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-header">Asignments</h2>
+            </div>
+            <post
+                v-for="post in posts"
+                :post="post">
+            </post>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <input type="text" class="form-control" v-model="title" placeholder="Enter title">
+                        <textarea class="form-control" v-model="content" placeholder="Enter content">
+                        </textarea>
+                        <button class="btn btn-default" v-on:click="submit">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <main class="assignment-list">
+
+            <header class="assignment-list__summary">
+                <h1>My assignments</h1>
+                <p>A list of assignments for me</p>
+            </header>
+
+            <div class="assignment-list__feedback">
+                <h2>Progress</h2>
+                <p>Feedback about your submission and progress</p>
+            </div>
+
+            <div class="assignment-list__assignments">
+
+                <h2>In progress</h2>
+                <ol>
+                    <li><a href="#">Code challenge</a></li>
+                </ol>
+
+                <h2>To-do</h2>
+                <ol>
+                    <li><a href="#">Simple assignment</a></li>
+                    <li><a href="#">Code assignment</a></li>
+                    <li><a href="#">Multiple-choice test</a></li>
+                </ol>
+
+                <h2>Complete</h2>
+                <ol>
+                    <li><a href="#">Simple assignment</a></li>
+                    <li><a href="#">Code assignment</a></li>
+                </ol>
+
+            </div>
+
+        </main>
     </div>
-
-    <main class="assignment-list">
-
-        <header class="assignment-list__summary">
-            <h1>My assignments</h1>
-            <p>A list of assignments for me</p>
-        </header>
-
-        <div class="assignment-list__feedback">
-            <h2>Progress</h2>
-            <p>Feedback about your submission and progress</p>
-        </div>
-
-        <div class="assignment-list__assignments">
-
-            <h2>In progress</h2>
-            <ol>
-                <li><a href="#">Code challenge</a></li>
-            </ol>
-
-            <h2>To-do</h2>
-            <ol>
-                <li><a href="#">Simple assignment</a></li>
-                <li><a href="#">Code assignment</a></li>
-                <li><a href="#">Multiple-choice test</a></li>
-            </ol>
-
-            <h2>Complete</h2>
-            <ol>
-                <li><a href="#">Simple assignment</a></li>
-                <li><a href="#">Code assignment</a></li>
-            </ol>
-
-        </div>
-
-    </main>
 </template>
 
 
