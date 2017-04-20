@@ -10,7 +10,7 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['', '.js', '.vue', '.scss'],
+    extensions: ['', '.js', '.html', '.vue', '.scss'],
     alias: {
       'src': path.resolve(__dirname, '../src')
     }
@@ -38,12 +38,12 @@ module.exports = {
         loader: 'json'
       },
       {
-          test: /\.css$/,
-          loader: 'style-loader!css-loader!autoprefixer-loader'
+        test: /\.css$/,
+        loader: 'style-loader!css-loader!autoprefixer-loader'
       },
       {
-          test: /\.scss$/,
-          loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -60,7 +60,7 @@ module.exports = {
   },
   vue: {
     loaders: {
-        scss: 'style!css!sass'
+      scss: 'style!css!sass'
     }
   },
   eslint: {
