@@ -1,21 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import App from './App'
-import AssignmentList from './components/AssignmentList'
+import AssignmentList from './components/AssignmentList.js'
 import AssignmentView from './components/AssignmentView'
 
 Vue.use(Router)
 
-const router = new Router()
-
-router.map({
-  '/posts': {
-    component: AssignmentList
-  },
-
-  '/post/:id': {
-    component: AssignmentView
-  }
+const router = new Router({
+  routes: [
+    {
+      path: '/posts',
+      component: AssignmentList
+    },
+    {
+      path: '/post/:id',
+      component: AssignmentView
+    }
+  ]
 })
 
 router.beforeEach(function () {
